@@ -8,10 +8,12 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-export_file_url = 'https://www.dropbox.com/s/v6cuuvddq73d1e0/export.pkl?raw=1'
+#export_file_url = 'https://www.dropbox.com/s/v6cuuvddq73d1e0/export.pkl?raw=1'
+export file url = 'https://dl.dropboxusercontent.com/s/vy578e5ja8shi56/export.pkl?dl=0'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+#classes = ['black', 'grizzly', 'teddys']
+classes = ['akiec', 'bcc', 'bkl', 'df', 'mel', 'nv', 'vasc']
 path = Path(__file__).parent
 
 app = Starlette()
