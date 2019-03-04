@@ -3,14 +3,33 @@
     <meta charset='utf-8'>
     <link rel='stylesheet' href='../static/style.css'>
     <script src='../static/client.js'></script>
+
+    <style>
+        figure { 
+            display: inline-block;
+            margin: 0;
+            text-align: center;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
 <div>
     <div class='center'>
-        <div class='title'>Classify Skin Lesions</div>
-        <p>
-            Use images of cancerous skin tissue
+        <div class='title'>Classify Skin Lesions Using AI</div>
+        <p>This app can dianose between seven types of cancerous and benign pigmented skin lesions<br>
+            Select an image to analyze<br>
+            (you can use one of the above images if you like by dragging it to your desktop and then selecting)
         </p>
+        <div>
+                <figure><img src="/static/images/benign_keratosis.jpg" title='benign keratosis' height=90 width=90><figcaption>benign keratosis</figcaption></figure>
+                <figure><img src="/static/images/melanocytic_nevi.jpg" height=90 width=90><figcaption>melanocytic nevi</figcaption></figure>
+                <figure><img src="/static/images/melanocytic_nevi.jpg" height=90 width=90><figcaption>foobarz</figcaption></figure>
+                <figure><img src="/static/images/melanocytic_nevi.jpg" height=90 width=90><figcaption>foobarz</figcaption></figure>
+                <figure><img src="/static/images/melanocytic_nevi.jpg" height=90 width=90><figcaption>foobarz</figcaption></figure>
+                <figure><img src="/static/images/melanocytic_nevi.jpg" height=90 width=90><figcaption>foobarz</figcaption></figure>
+                <figure><img src="/static/images/melanocytic_nevi.jpg" height=90 width=90><figcaption>foobarz</figcaption></figure>
+        </div>
         <div class='content'>
             <div class='no-display'>
                 <input id='file-input'
@@ -20,7 +39,6 @@
                        accept='image/*'
                        onchange='showPicked(this)'>
             </div>
-            <img src="foo.jpg" height=200 width=200>
             <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
             <div class='upload-label'>
                 <label id='upload-label'>No file chosen</label>
@@ -36,6 +54,7 @@
             </div>
         </div>
     </div>
+    <div class='bottom'><br><br>This app is a prototype... don't trust it!  See a doctor if you have a concern.<br>Written by Dan Eiref</div>
 </div>
 </body>
 </html>
