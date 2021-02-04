@@ -11,6 +11,8 @@ RUN pip install --no-cache-dir -r requirements.txt --upgrade
 
 RUN pip install fastai --upgrade
 
+RUN pip install https://github.com/fastai/fastai1/archive/master.zip
+
 COPY app app/
 
 RUN python app/server.py
