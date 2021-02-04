@@ -44,7 +44,7 @@ async def setup_learner():
 loop = asyncio.get_event_loop()
 tasks = [asyncio.ensure_future(setup_learner())]
 learn = loop.run_until_complete(asyncio.gather(*tasks))[0]
-loop.close()
+loop.close() 
 
 @app.route('/')
 def index(request):
