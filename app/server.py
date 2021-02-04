@@ -5,7 +5,6 @@ from starlette.middleware.cors import CORSMiddleware
 import uvicorn, aiohttp, asyncio
 from io import BytesIO
 import logging
-pip install https://github.com/fastai/fastai1/archive/master.zip
 
 from fastai import *
 from fastai.imports import *
